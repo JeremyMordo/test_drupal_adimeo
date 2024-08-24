@@ -1,0 +1,24 @@
+<?php 
+
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function test_drupal_queue_worker_cron() {
+  $currentTime = Drupal::time()->getRequestTime();
+
+  $query = \Drupal::entityQuery('node'); 
+  $evenements = $query
+    ->accessCheck(FALSE)
+    ->condition('field_event_type', 'evenement')
+    ->condition('field_daterange.end_value', $current_time, '<');
+
+  $queue = Drupal::service('Drupal\test_drupal_queue_worker\Plugin\QueueWorker\CustomQueueWorker'); 
+
+  foreach ($evenements as $evenement) {
+    $queue->processItem($evenement);
+  }
+}

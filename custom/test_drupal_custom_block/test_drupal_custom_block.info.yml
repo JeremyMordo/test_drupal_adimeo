@@ -1,0 +1,4 @@
+name: test_drupal_custom_block
+description: Module pour créé un bloc custom
+type: module
+core_version_requirement: ^10

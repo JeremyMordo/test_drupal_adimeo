@@ -1,0 +1,3 @@
+services:
+  custom_block.queue_worker:
+    class: Drupal\Plugin\QueueWorker\CustomQueueWorker

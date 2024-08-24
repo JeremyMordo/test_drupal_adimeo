@@ -1,0 +1,4 @@
+name: test_drupal_queue_worker
+description: Module pour créé un cron afin de dépublié des événements
+type: module
+core_version_requirement: ^10
