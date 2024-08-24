@@ -1,6 +1,5 @@
 # Test drupal Adimeo
 
-
 Bonjour Mr, Mme,
 
 J'espère que vous lirez ceci avant de commencer la review de code.
@@ -33,6 +32,9 @@ Si vous pouviez me communiquer les différents avantages du QueueWorker par rapp
 
 3°) J'ai préféré dissocier les 2 features dans deux modules différents afin d'être plus scallable si l'un des deux n'était plus d'actualité.
 
+Temps de lecture / compréhension de l'attendu : 20 min.
+Temps de recherche pour le problème me concernant : 5h.
+Temps de réalisation du développement : 1h (Possiblement 2 voir 3 avec la possibilité de tester).
 
 Merci d'avance de m'avoir lu et veuillez encore m'excuser pour ce résultat.
 
